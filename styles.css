@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Hind+Siliguri&display=swap');
+
+body {
+    padding: 2rem;
+    background-color: #FCEBF8;
+}
+
+h1, h2 {
+    font-family: 'Alata', sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: #801757;
+}
+
+h2 {
+    color: #FCD835;
+    font-size: 2rem;
+}
+
+p, li, figcaption {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 1.4rem;
+    color: #FCEBF8;
+}
+
+img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border: 4px solid #FCD835;
+    border-radius: 8px;
+}
+
+.grid {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 75rem;
+    padding: 1rem 2rem;
+}
+
+.portal {
+    background-color: #801757;
+    padding: 5% 12%;
+    border: #FCD835 solid 4px;
+}
+
+.navbar {
+    background-color: #FCEBF8;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    margin: -4px;
+}
+
+.navbar a {
+    text-align: center;
+    font-family: 'Alata', sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #801757;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: #801757 dashed 4px;
+    border-bottom-color:#FCD835;
+}
+
+.navbar a:hover {
+    background-color: #CD98D9;
+    color: #FCEBF8;
+    border-style: solid;
+}
+
+.navbar a.active {
+    background-color:#801757;
+    color:#FCD835;
+    border-color:#FCD835;
+    border-style: solid;
+}
+
+.navbar a.active:hover {
+    background-color: #CD98D9;
+}
+
+a.post_link {
+    color: #FCD835;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.post_link:hover {
+    text-decoration: underline;
+}
+
+.post_date {
+    text-align: right;
+}
+
+.post_header {
+    text-align: center;
+}
+
+.advance {
+    padding: 1rem 0;
+}
+
+.back {
+    display: inline-block;
+    width: 50%;
+}
+
+.forward {
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+img:not(.gallery > img) {
+    display: block;
+    margin: 10px auto;
+}
