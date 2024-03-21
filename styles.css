@@ -30,6 +30,7 @@ p, li, figcaption {
 
 ul {
     width: 70%;
+    overflow-x: auto;
 }
 
 img {
