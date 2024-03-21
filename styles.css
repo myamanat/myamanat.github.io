@@ -2,7 +2,7 @@
 
 body {
     padding: 2rem;
-    background-color: #FCEBF8;
+    background-color: #D9F2CE;
 }
 
 h1, h2 {
@@ -12,26 +12,39 @@ h1, h2 {
 h1 {
     font-size: 4rem;
     text-align: center;
-    color: #801757;
+    color: #6D8F71;
 }
 
 h2 {
-    color: #FCD835;
+    color: #BBC3A4;
     font-size: 2rem;
+    width: 100%;
+    text-align: center;
 }
 
 p, li, figcaption {
     font-family: 'Hind Siliguri', sans-serif;
     font-size: 1.4rem;
-    color: #FCEBF8;
+    color: #D9F2CE;
+}
+
+ul {
+    width: 70%;
 }
 
 img {
-    width: 100%;
+    width: 95%;
     max-width: 400px;
     height: auto;
-    border: 4px solid #FCD835;
+    border: 4px solid #BBC3A4;
     border-radius: 8px;
+}
+
+.textblock {
+    overflow-y: scroll;
+    max-height: 400px;
+    max-width: 450px;
+    padding: 5px;
 }
 
 .grid {
@@ -43,17 +56,24 @@ img {
 }
 
 .portal {
-    background-color: #801757;
+    background-color: #6D8F71;
     padding: 5% 12%;
-    border: #FCD835 solid 4px;
+    border: #BBC3A4 solid 4px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
 }
 
 .navbar {
-    background-color: #FCEBF8;
+    background-color: #D9F2CE;
     display: flex;
     flex-direction: row;
-    gap: 4px;
+    gap: 15px;
     margin: -4px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .navbar a {
@@ -61,32 +81,32 @@ img {
     font-family: 'Alata', sans-serif;
     font-weight: bold;
     font-size: 1.4rem;
-    color: #801757;
+    color: #6D8F71;
     text-decoration: none;
     padding: 1rem 2rem;
-    border: #801757 dashed 4px;
-    border-bottom-color:#FCD835;
+    border: #6D8F71 dashed 4px;
+    border-bottom-color:#BBC3A4;
 }
 
 .navbar a:hover {
-    background-color: #CD98D9;
-    color: #FCEBF8;
+    background-color: #344F2D;
+    color: #D9F2CE;
     border-style: solid;
 }
 
 .navbar a.active {
-    background-color:#801757;
-    color:#FCD835;
-    border-color:#FCD835;
+    background-color:#6D8F71;
+    color:#BBC3A4;
+    border-color:#BBC3A4;
     border-style: solid;
 }
 
 .navbar a.active:hover {
-    background-color: #CD98D9;
+    background-color: #344F2D;
 }
 
 a.post_link {
-    color: #FCD835;
+    color: #BBC3A4;
     text-decoration: none;
     font-weight: bold;
 }
@@ -116,21 +136,4 @@ a.post_link:hover {
     display: inline-block;
     width: 50%;
     text-align: right;
-}
-
-.gallery {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 20px 10px;
-}
-
-img:not(.gallery > img) {
-    display: block;
-    margin: 10px auto;
 }
